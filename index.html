@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Document</title>
+    <style> body{background-image:url(image/img2.jpg);} </style> 
+</head>
+<body>
+    <h1>Canada Tools</h1>
+
+    <form method="myForm" method="Post" onsubmit="return formSubmit();">
+        <label>Name</label> 
+        <input id="name"  type="text" name="name"/> <br><br>
+
+         <label>Email</label>
+         <input id="email" type="email" name="email"/> <br><br>
+         
+         <label>Phone</label>
+         <input id="phone" placeholder="XXX-XXX-XXXX" type="phone" name="phone"/> <br><br>
+
+         <label>Address</label>
+         <input id="address" type ="text" name="address"/> <br><br>
+
+         <label>City</label>
+         <input id="city" type="city" name="city"/> <br><br>
+
+         <label>Post Code</label>
+         <input id="postCode" placeholder="X9X X9X" type="postCode" name="postCode"/> <br><br>
+
+         <label>Province</label>
+         <select name = "province" id="province">
+             <option value="Ontario">Ontario</option>
+             <option value="Manitoba">Manitoba</option>
+             <option value="Quebec">Quebec</option>
+         </select>
+         <br><br>
+
+         <label>Rubber Mallet</label>
+         <input id="product1" placeholder="Enter a number" type="text" name="product1"> <br><br>
+
+         <label>Tape Measure</label>
+         <input id="product2" placeholder="Enter a number" type="text" name="product2"> <br><br>
+
+         <label>Screwdriver</label>
+         <input id="product3" placeholder="Enter a number" type="text" name="product3"> <br><br>
+
+         <label>Delivery Time</label>
+         <select name="delivery" id="delivery">
+            <option value="1Days">1DAY</option>
+            <option value="2Days">2DAYs</option>
+            <option value="3Week">3WEEKs</option>
+            <option value="4Week">4WEEKs</option>
+         </select>
+
+         <br><br><br>
+
+         <input type = "submit" value= "Submit"><br>
+         <p id ="errorsMsg"></p>
+         <br><br>
+    </form>
+
+    <div class="invoiceInf">
+        <p id="invoice">Canadian Tools's Invoice</p>
+    </div> 
+
+</body>
+</html>
